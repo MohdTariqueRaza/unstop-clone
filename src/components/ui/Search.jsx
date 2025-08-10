@@ -1,3 +1,4 @@
+"use client";
 import { searchData } from "@/utils/data";
 
 export default function Search({ isOpen, setIsOpen }) {
