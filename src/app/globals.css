@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --light: #e2e2e2;
+  --black: #383838;
+  --blacklight: #717171;
+  --primary: #1c4980;
+  --gray: #f6f6f6;
+  --primarylight: #0073e6;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@theme inline {
+  --color-border: var(--border);
+  --color-black: var(--black);
+  --color-primary: var(--primary);
+  --color-light: var(--light);
+  --color-primarylight: var(--primarylight);
+  --color-blacklight: var(--blacklight);
+}
+
+.container {
+  max-width: 1240px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.common-slider .slick-track {
+  display: flex;
+}
+
+.common-slider .slick-track .slick-slide {
+  height: auto;
+}
+
+.common-slider .slick-track .slick-slide > div {
+  height: 100%;
+}
