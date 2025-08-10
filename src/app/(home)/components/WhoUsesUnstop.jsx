@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useUnstopCards } from "@/utils/data";
 function WhoUsesUnstop() {

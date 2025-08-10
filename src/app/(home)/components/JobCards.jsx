@@ -1,12 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Card from "@/components/cards/Card";
 import Link from "next/link";
 import { useMedia } from "@/hooks/useMedia";
 import { jobs } from "@/utils/data";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 function JobCard() {
   const [settings, setSettings] = useState(null);

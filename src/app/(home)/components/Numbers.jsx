@@ -1,7 +1,9 @@
 "use client";
 import { cards } from "@/utils/data";
+import dynamic from "next/dynamic";
 import React from "react";
-import Slider from "react-slick";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const settings = {
   infinite: true,

@@ -1,10 +1,12 @@
 "use client";
 import { industryLogos } from "@/utils/data";
+import dynamic from "next/dynamic";
 import React from "react";
-import Slider from "react-slick";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 export default function IndustryVeterans() {
   const settings = {
+    dots: false,
     infinite: true,
     speed: 1000,
     cssEase: "ease-in-out",

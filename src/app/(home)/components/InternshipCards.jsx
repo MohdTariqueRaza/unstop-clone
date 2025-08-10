@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
 import { FiArrowUpRight } from "react-icons/fi";
 import Card from "@/components/cards/Card";
 import Link from "next/link";
 import { useMedia } from "@/hooks/useMedia";
 import { internshipData } from "@/utils/data";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 function IntershipCards() {
   const [settings, setSettings] = useState(null);

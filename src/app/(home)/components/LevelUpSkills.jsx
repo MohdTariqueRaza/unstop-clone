@@ -1,3 +1,4 @@
+"use client";
 import { items } from "@/utils/data";
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
